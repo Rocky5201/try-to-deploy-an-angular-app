@@ -1,0 +1,31 @@
+.top{
+    display: flex; 
+    background-color: black;  
+    width: 100%;
+    .navbar-button{
+        margin: 20px 30px;
+        color: white;
+        text-decoration: none;
+        font:var(--main-family);
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .navbar-button:hover{
+      cursor: pointer;
+      margin-top:13px;
+      color: lightskyblue;
+    }
+    .navbar{
+    .navbar-sub{
+      color: white;
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 20px 30px;
+    }
+
+    .navbar-sub:hover {
+      color:lightgray;
+      cursor: pointer;
+      margin-top:13px;
+    }
+  }}

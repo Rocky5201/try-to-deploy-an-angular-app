@@ -1,0 +1,6 @@
+<div  class="top">
+    <div *ngFor="let link of links; index as i" class="navbar">
+        <h1  class="navbar-sub" tabindex="0" (click)="goto(i)" >{{link}}</h1>
+    </div>
+    <a class="navbar-button" href="/test.txt" download="test.txt">{{this.button}}</a>
+</div>
