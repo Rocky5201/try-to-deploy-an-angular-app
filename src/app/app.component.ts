@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['../demo-styling.css']
 })
 export class AppComponent {
-  title = 'angular-quickstart';
+  scrollTo(className: string):void {
+    console.log("app_"+className);
+    const elementList = document.querySelectorAll('.' + className);
+    const element = elementList[0] as HTMLElement;
+    element.scrollIntoView({ behavior: 'smooth' });
+ }
 }
