@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component, EventEmitter, Output} from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,9 +6,14 @@ import { Component} from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-  links:string[]=['Rocky Chen',"About Me","Experience","Skills","Projects",'Contact Me'];
+  @Output() newItemEvent = new EventEmitter<string>();
+  links:string[]=['Rocky Chen',"Experience","Projects",'About Me'];
   button:string='Download Resume';
-  goto(index:number){
-    console.log("goto_"+index);
+  scroll(index:number) {
+    console.log(index);
+    if(index==0)
+      this.newItemEvent.emit('profile');
+    else
+    this.newItemEvent.emit('card');
   }
 }
