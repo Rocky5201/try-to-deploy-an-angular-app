@@ -1,17 +1,14 @@
 .card{
-    margin-left: 12rem;
-    margin-right: 12rem;
+    margin: 5rem 12rem;
 }
 .section{
     display: flex;
 }
-.section:hover{
+.action:hover{
     color: blue;
     cursor: pointer;
 }
 .topie{
     width: 38rem;
 }
-.image{
-    width: 60rem;
-}
+

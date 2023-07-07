@@ -1,14 +1,14 @@
 <div class="card">
     <div class="image">
-        <img src="{{this.content.image}}" alt="Iamge" />
+        <img src="{{this.content.image}}" alt="Iamge" style="width: 60rem;" />
     </div>
-    <div class="section" (click)="newWindow()">    
+    <div class="section">    
         <div class="topie">
             <h2>{{this.content.topie}}</h2>
         </div>
         <div class="paragraph">
             <p class="paragraph">{{this.content.paragraph}}</p>
-            <p class="action"><strong>{{this.content.action}}</strong></p>
+            <p class="action" (click)="newWindow()"><strong>{{this.content.action}}</strong></p>
         </div>
     </div>
 </div>
