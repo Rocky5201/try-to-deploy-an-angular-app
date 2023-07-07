@@ -1,4 +1,14 @@
-<p>card works!</p>
-<div>image<div>
-<div>topie</div>
-<div>paragraph</div>
+<div class="card">
+    <div class="image">
+        <img src="{{this.content.image}}" alt="Iamge" />
+    </div>
+    <div class="section" (click)="newWindow()">    
+        <div class="topie">
+            <h2>{{this.content.topie}}</h2>
+        </div>
+        <div class="paragraph">
+            <p class="paragraph">{{this.content.paragraph}}</p>
+            <p class="action"><strong>{{this.content.action}}</strong></p>
+        </div>
+    </div>
+</div>
