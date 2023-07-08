@@ -7,12 +7,12 @@ import { Component, EventEmitter, Output} from '@angular/core';
 })
 export class NavBarComponent {
   @Output() newItemEvent = new EventEmitter<string>();
-  links:string[]=['Rocky Chen',"Experience","Projects",'About Me'];
+  links:string[]=['Rocky Chen',"Projects",'About Me'];
   button:string='Download Resume';
   scroll(index:number) {
     console.log(index);
     if(index==0)
-      this.newItemEvent.emit('profile');
+      this.newItemEvent.emit('app');
     else
     this.newItemEvent.emit('card');
   }

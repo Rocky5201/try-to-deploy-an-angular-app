@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { profile } from '../dataType';
 
 @Component({
   selector: 'app-profile',
@@ -6,6 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent  {
-  title="Rocky Chen"
-  subTitle="Software Engineer"
+  @Input() content:profile={}as profile;
 }

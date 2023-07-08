@@ -1,4 +1,6 @@
 .top{
+    position: fixed;
+    top: 0;
     display: flex; 
     background-color: black;  
     width: 100%;

@@ -1,9 +1,18 @@
 <div class="nav-bar" >
   <app-nav-bar (newItemEvent)="scrollTo($event)" ></app-nav-bar>
-<div>
+</div>
 <div class="profile" >
-  <app-profile></app-profile>
+  <app-profile [content]="profile"></app-profile>
 </div>
-<div class="card">
-  <app-card ></app-card>
+<div class="card" *ngFor="let project of projects">
+  <app-card [content]="project"></app-card>
 </div>
+<div class="contact" style="background-color: lightsteelblue; padding-top: 7rem;">
+  <app-contact [content]="this.contact" ></app-contact>
+  <div class="list" style=" display: flex; margin: 0 15%;">  
+    <div *ngFor="let skill of skills">
+      <app-list [content]="skill"></app-list>
+    </div>
+  </div>
+</div>
+<p style="text-align: center;">©2023 Rights Reserved</p>
