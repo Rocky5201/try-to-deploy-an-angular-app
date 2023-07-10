@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output} from '@angular/core';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output} from '@angular/core';
 })
 export class NavBarComponent {
   @Output() newItemEvent = new EventEmitter<string>();
-  content:string[]=['Rocky Chen',"Projects",'About Me','Download Resume'];
+  @Input() content:string[]=[];
   scroll(index:number) {
     console.log(index);
     if(index==0)

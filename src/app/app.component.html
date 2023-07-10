@@ -1,5 +1,5 @@
 <div class="nav-bar" >
-  <app-nav-bar (newItemEvent)="scrollTo($event)" ></app-nav-bar>
+  <app-nav-bar [content]="nav" (newItemEvent)="scrollTo($event)" ></app-nav-bar>
 </div>
 <div class="profile" >
   <app-profile [content]="profile"></app-profile>
