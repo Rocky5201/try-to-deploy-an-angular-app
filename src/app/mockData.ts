@@ -29,20 +29,20 @@ export const skillsMock:skill[]=[{
 export const projectsMock:projects[]=[{
     image:"../../assets/skymiles.jpg",
     link:'https://thriftytraveler.com/news/airlines/delta-new-skymiles-dashboard/',
-    topie:"Delta Airline",
+    topie:"Associate Software Developer",
     action:"MORE",
     paragraph:"Delta Rolls Out New SkyMiles Dashboard to Track Your Medallion Status Progress"
   },{
     image:"../../assets/one.PNG",
     link:'',
-    topie:"Web Designer",
+    topie:"Web Developer",
     action:"Coming Soon",
     paragraph:"Collaborated with the business owner to design a streamlined website"
   },
   {
     image:"../../assets/robot.jpg",
     link:'https://icat.vt.edu/projects/2015-2016/major/escher-humanoid-robot.html',
-    topie:"Humanoid Robot",
+    topie:"Associate Researcher",
     action:"MORE",
     paragraph:"Robot was intended to be entered into US Navycompetition to assist in firefighting sea rescues."
   }]
