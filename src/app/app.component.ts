@@ -61,7 +61,13 @@ export class AppComponent {
   }
 
   scrollTo(className: string):void {
-    console.log("app_"+className);
+    if(className=='top'){
+      window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+      });
+    }
     const elementList = document.querySelectorAll('.' + className);
     const element = elementList[0] as HTMLElement;
     element.scrollIntoView({ behavior: 'smooth' });

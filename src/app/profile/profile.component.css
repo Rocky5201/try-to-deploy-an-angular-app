@@ -19,3 +19,8 @@
     margin-right: auto;
     width: 50%;
 }
+@media (max-width: 420px){
+    .title{
+        margin-top: 10rem;
+    }
+}

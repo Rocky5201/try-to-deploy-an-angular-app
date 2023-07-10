@@ -138,3 +138,11 @@ footer {
 footer img {
   width: 20px;
 }
+.list{
+  display: flex; margin: 0 15%;
+}
+@media (max-width: 420px){
+  .list{
+    display: block; 
+  }
+}

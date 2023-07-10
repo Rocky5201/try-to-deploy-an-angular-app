@@ -7,9 +7,9 @@
 <div class="card" *ngFor="let project of projects">
   <app-card [content]="project"></app-card>
 </div>
-<div class="contact" style="background-color: lightsteelblue; padding-top: 7rem;">
+<div class="contact" style="background-color: lightsteelblue; padding-top: 7rem; ">
   <app-contact [content]="this.contact" ></app-contact>
-  <div class="list" style=" display: flex; margin: 0 15%;">  
+  <div class="list" >  
     <div *ngFor="let skill of skills">
       <app-list [content]="skill"></app-list>
     </div>

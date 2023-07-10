@@ -1,33 +1,20 @@
 .top{
-    position: fixed;
-    top: 0;
-    display: flex; 
-    background-color: black;  
-    width: 100%;
-    .navbar-button{
-        margin: 20px 30px;
-        color: white;
-        text-decoration: none;
-        font:var(--main-family);
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    .navbar-button:hover{
-      cursor: pointer;
-      margin-top:13px;
-      color: lightskyblue;
-    }
-    .navbar{
-    .navbar-sub{
-      color: white;
-      text-align: center;
-      font-size: 1.5rem;
-      margin: 20px 30px;
-    }
+  background-color: black;
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
 
-    .navbar-sub:hover {
-      color:lightgray;
-      cursor: pointer;
-      margin-top:13px;
-    }
-  }}
+h1,a{
+  font-family: var(--main-family);
+  font-size: 1.5rem;
+  margin: 1rem 7%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+h1:hover,a:hover{
+  color: gray;
+  cursor: pointer;
+}

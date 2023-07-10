@@ -11,4 +11,16 @@
 .topie{
     width: 38rem;
 }
-
+.image{
+    width: 60rem;
+}
+@media (max-width: 915px){
+    .image{
+        width: 27rem;
+    }
+}
+@media (max-width: 420px){
+    .app-card{
+        margin: 0rem 0rem;
+    }
+}

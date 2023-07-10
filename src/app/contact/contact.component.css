@@ -2,7 +2,6 @@
     display: flex;
     margin-left: 20rem;
     margin-right: 20rem;
-
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
 }
 .section{
@@ -17,4 +16,26 @@
 .button:hover{
     background-color: skyblue;
     cursor: pointer;
+}
+@media (max-width: 820px){
+    .app-contact{
+        margin-left: 9rem;
+        margin-right: 0;
+    }
+    .section{
+        margin-left: 6rem;
+     }
+}
+@media (max-width: 420px){
+    .app-contact{
+        display: block;
+        margin-left: 5rem;
+    }
+    .section{
+        margin-left: -4rem;
+     }
+     .button{
+        margin-left: 4rem;
+        width: 16rem;
+     }
 }
