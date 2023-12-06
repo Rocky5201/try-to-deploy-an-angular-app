@@ -8,6 +8,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ListComponent } from './list/list.component';
 import { ContactComponent } from './contact/contact.component';
+import { TimeLineComponent } from './time-line/time-line.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     NavBarComponent,
     ProfileComponent,
     ListComponent,
-    ContactComponent
+    ContactComponent,
+    TimeLineComponent
   ],
   imports: [
     BrowserModule,

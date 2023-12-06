@@ -1,7 +1,29 @@
 import{ profile, contact, projects, skill} from "../app/dataType"
 
+export const timeMock:profile[]=[{
+  title:"Fleet Hoster | Software Engineer",
+  subTitle:"Aug 2023 - Present"
+ },
+ {
+  title:"Delta Air Lines | Associate Software Development Engineer",
+  subTitle:"Jul 2021 - Jun 2023"
+  },
+  {
+   title:"Pyramid Consulting, Inc | Associate Software Development Engineer",
+   subTitle:"Apr 2021 - Jul 2023"
+  },
+  {
+   title:"New China Buffet | Freelance",
+   subTitle:"May 2020 - Dec 2020"
+  },
+  {
+   title:"Virginia Tech | Undergraduate Robotics Researcher",
+   subTitle:"Apr 2019 - Dec 2019"
+  }
+  ]
+
 export const navMock:string[]=
-    ['Rocky Chen',"Projects",'About Me','Download Resume'];
+    ['Rocky Chen','Experience',"Projects",'About Me','Download Resume'];
 
 export const profileMock:profile={
     title:"Rocky Chen",

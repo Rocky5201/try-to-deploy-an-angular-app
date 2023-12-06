@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {contactMock, navMock, profileMock, projectsMock, skillsMock} from'../app/mockData';
+import {contactMock, navMock, profileMock, projectsMock, skillsMock, timeMock} from'../app/mockData';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +7,8 @@ import {contactMock, navMock, profileMock, projectsMock, skillsMock} from'../app
 })
 export class AppComponent {
   nav=navMock;
+
+  timeLine=timeMock;
   
   profile=profileMock;
   
