@@ -1,0 +1,8 @@
+<div class="timeline" *ngFor="let content of contents; index as i"  >
+    <div class="container" [ngClass]="['container',i%2==1?'left':'right']">
+      <div class="content">
+        <h2>{{content.title}}</h2>
+        <p>{{content.subTitle}}</p>
+      </div>
+    </div>
+  </div>
