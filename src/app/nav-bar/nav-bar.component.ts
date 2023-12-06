@@ -13,6 +13,8 @@ export class NavBarComponent {
     if(index==0)
       this.newItemEvent.emit('top');
     else if(index==1)
+      this.newItemEvent.emit('time-line');
+    else if(index==2)
       this.newItemEvent.emit('card');
     else 
       this.newItemEvent.emit('contact');
